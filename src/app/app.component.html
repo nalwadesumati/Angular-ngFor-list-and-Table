@@ -151,7 +151,9 @@
                         <th>Name</th>
                         <th>Course</th>
                         <th>Marks</th>
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
+
                     </tr>
                 </thead>
 
@@ -162,13 +164,14 @@
                         <td>{{ s.course }}</td>
                         <td>{{ s.marks }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
                     </tr>
@@ -186,7 +189,8 @@
                         <th>Name</th>
                         <th>Department</th>
                         <th>Salary</th>
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
 
                     </tr>
                 </thead>
@@ -197,13 +201,14 @@
                         <td>{{ e.dept }}</td>
                         <td>{{ e.salary }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
 
@@ -222,8 +227,8 @@
                         <th>ID</th>
                         <th>Title</th>
                         <th>Author</th>
-                        <th>Price</th>
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
 
                     </tr>
                 </thead>
@@ -234,16 +239,16 @@
                         <td>{{ b.author }}</td>
                         <td>{{ b.price }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
-
                     </tr>
                 </tbody>
             </table>
@@ -259,7 +264,8 @@
                         <th>Name</th>
                         <th>Category</th>
                         <th>Price</th>
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
 
                     </tr>
                 </thead>
@@ -270,13 +276,14 @@
                         <td>{{ p.category }}</td>
                         <td>₹{{ p.price }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
 
@@ -296,8 +303,8 @@
                         <th>Name</th>
                         <th>Category</th>
                         <th>Price</th>
-                        <th>Actions</th>
-
+                        <th>Edit</th>
+                        <th>Remove</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -307,16 +314,16 @@
                         <td>{{ m.genre }}</td>
                         <td>₹{{ m.rating }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
-
                     </tr>
                 </tbody>
             </table>
@@ -333,8 +340,8 @@
                         <th>Title</th>
                         <th>Genre</th>
                         <th>Rating</th>
-                        <th>Actions</th>
-
+                        <th>Edit</th>
+                        <th>Remove</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -344,16 +351,16 @@
                         <td>{{ g.genre }}</td>
                         <td>₹{{ g.rating }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
-
                     </tr>
                 </tbody>
             </table>
@@ -370,7 +377,8 @@
                         <th>Name</th>
                         <th>State</th>
                         <th>population</th>
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
 
                     </tr>
                 </thead>
@@ -381,16 +389,16 @@
                         <td>{{ g.state }}</td>
                         <td>₹{{ g.population }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
-
                     </tr>
                 </tbody>
             </table>
@@ -408,7 +416,8 @@
                         <th>Name</th>
                         <th>capital</th>
                         <th>population</th>
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
 
                     </tr>
                 </thead>
@@ -419,13 +428,14 @@
                         <td>{{ x.capital }}</td>
                         <td>₹{{ x.population }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
 
@@ -446,7 +456,8 @@
                         <th>Name</th>
                         <th>type</th>
                         <th>price</th>
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
 
                     </tr>
                 </thead>
@@ -457,13 +468,14 @@
                         <td>{{ v.type }}</td>
                         <td>₹{{ v.price }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
 
@@ -483,7 +495,8 @@
                         <th>Name</th>
                         <th>Brand</th>
                         <th>price</th>
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
 
                     </tr>
                 </thead>
@@ -494,16 +507,16 @@
                         <td>{{ b.brand }}</td>
                         <td>₹{{ b.price }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
-
                     </tr>
                 </tbody>
             </table>
@@ -521,7 +534,8 @@
                         <th>Name</th>
                         <th>Brand</th>
                         <th>Price</th>
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
 
                     </tr>
                 </thead>
@@ -532,13 +546,14 @@
                         <td>{{ x.brand }}</td>
                         <td>₹{{ x.price }}</td>
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
 
@@ -557,8 +572,8 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>value</th>
-
-                        <th>Actions</th>
+                        <th>Edit</th>
+                        <th>Remove</th>
 
                     </tr>
                 </thead>
@@ -567,15 +582,15 @@
                         <td>{{ i + 1 }}</td>
                         <td>{{ x.name }}</td>
                         <td>{{ x.value }}</td>
-
                         <td>
-                            <button class="btn btn-sm btn-info mr-4">
+                            <button mat-mini-fab color="primary">
                                 <mat-icon>edit</mat-icon>
-
                             </button>
-                            <button class="btn btn-sm btn-danger">
-                                <mat-icon>delete</mat-icon>
 
+                        </td>
+                        <td>
+                            <button mat-mini-fab color="warn">
+                                <mat-icon>delete</mat-icon>
                             </button>
                         </td>
 
